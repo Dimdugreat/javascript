@@ -1,62 +1,38 @@
 
-#btn1 {
+button {
+    display: inline-flex;
     font-weight: bold;
     font-size: 18px;
-    color: azure;
-    border: solid 8px red;
+    color: rgb(255, 255, 255);
+    border: none;
+    transition: 0.2s;
     border-radius: 10px;
-    background-color: #dc143c;
-    box-shadow: 3px 3px  rgba(0, 0, 0, 0.316) ;
+    justify-content: space-between;
 }
-
-#btn1:active {
-    box-shadow: -3px -3px black;
+#btn1 {
+    background-color: #ff0101;
 }
 #btn2 {
-    font-weight: bold;
-    font-size: 18px;
-    border: solid 8px rgb(23, 224, 57);
-    border-radius: 10px;
     background-color: #14dc39;
-    box-shadow: 3px 3px  rgba(0, 0, 0, 0.281) ;
-    transition: 0.2s;
 }
-
-#btn2:active {
-    box-shadow: -3px -3px black;
-}
-
 #btn3 {
-    font-weight: bold;
-    font-size: 18px;
-    border: solid 8px #340cff;
-    border-radius: 10px;
     background-color: #340cff;
-    box-shadow: 3px 3px  rgba(0, 0, 0, 0.281) ;
-    transition: 0.2s;
 }
-
-#btn3:active {
-    box-shadow: -3px -3px black;
+#btn4 {
+    background-color: #def60a;
 }
-
+#btn5 {
+    background-color: #ff0cc6;
+}
 #rst {
-    font-weight: bold;
-    font-size: 18px;
-    border: solid 8px grey;
-    border-radius: 10px;
     background-color: grey;
-    box-shadow: 3px 3px  rgba(0, 0, 0, 0.281) ;
-    transition: 0.2s;
 }
-
-#rst:active {
-    box-shadow: -3px -3px black;
+button:active {
+    box-shadow: -3px -1px rgba(0, 0, 0, 0.445);
 }
-
 .colors {
     display: flex;
-    height: 400px;
+    height: 150px;
     justify-content: center;
     margin-bottom: 3rem;
 
@@ -65,15 +41,26 @@
 .cl1{
     background-color: rgb(255, 0, 0);
     width: 100%;
-    transition: 0.4s;
+    transition: 0.3s;
 }
 .cl2{
     background-color: rgb(0, 255, 68);
     width: 100%;
-    transition: 0.4s;
+    transition: 0.3s;
 }
 .cl3{
     background-color: rgb(13, 0, 255);
     width: 100%;
-    transition: 0.4s;
+    transition: 0.3s;
 }
+.cl4{
+    background-color: rgb(255, 230, 0);
+    width: 100%;
+    transition: 0.3s;
+}
+.cl5{
+    background-color: rgb(255, 0, 208);
+    width: 100%;
+    transition: 0.3s;
+}
+
