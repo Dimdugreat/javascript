@@ -1,5 +1,5 @@
 alert("Javascript Enabled");
-var compteurClic = 0;
+
 monBouton = document.getElementById("btn1");
 monBouton2 = document.getElementById("btn2");
 monBouton3 = document.getElementById("btn3");
@@ -12,6 +12,7 @@ couleur2 = document.querySelector(".cl2");
 couleur3 = document.querySelector(".cl3");
 couleur4 = document.querySelector(".cl4");
 couleur5 = document.querySelector(".cl5");
+
 monBouton.onclick = function() { 
     couleur1.style.backgroundColor="#FF00FF";
     couleur1.style.width = "60%";
