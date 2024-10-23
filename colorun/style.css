@@ -5,7 +5,7 @@
     color: azure;
     border: solid 8px red;
     border-radius: 10px;
-    background-color: crimson;
+    background-color: #dc143c;
     box-shadow: 3px 3px  rgba(0, 0, 0, 0.316) ;
 }
 
@@ -17,12 +17,40 @@
     font-size: 18px;
     border: solid 8px rgb(23, 224, 57);
     border-radius: 10px;
-    background-color: rgb(20, 220, 57);
+    background-color: #14dc39;
     box-shadow: 3px 3px  rgba(0, 0, 0, 0.281) ;
     transition: 0.2s;
 }
 
 #btn2:active {
+    box-shadow: -3px -3px black;
+}
+
+#btn3 {
+    font-weight: bold;
+    font-size: 18px;
+    border: solid 8px #340cff;
+    border-radius: 10px;
+    background-color: #340cff;
+    box-shadow: 3px 3px  rgba(0, 0, 0, 0.281) ;
+    transition: 0.2s;
+}
+
+#btn3:active {
+    box-shadow: -3px -3px black;
+}
+
+#rst {
+    font-weight: bold;
+    font-size: 18px;
+    border: solid 8px grey;
+    border-radius: 10px;
+    background-color: grey;
+    box-shadow: 3px 3px  rgba(0, 0, 0, 0.281) ;
+    transition: 0.2s;
+}
+
+#rst:active {
     box-shadow: -3px -3px black;
 }
 
@@ -37,12 +65,15 @@
 .cl1{
     background-color: rgb(255, 0, 0);
     width: 100%;
+    transition: 0.4s;
 }
 .cl2{
     background-color: rgb(0, 255, 68);
     width: 100%;
+    transition: 0.4s;
 }
 .cl3{
     background-color: rgb(13, 0, 255);
     width: 100%;
+    transition: 0.4s;
 }
