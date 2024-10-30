@@ -1,0 +1,19 @@
+#dialog-box {
+            width:500px;
+            background-color: rgba(30, 143, 255, 0.561);
+            padding: 10px;
+            box-sizing: 500px;
+            text-align: center;
+            position: fixed;
+            top: 50vh;
+            left: 50%;
+            transform: translate(-50%, -50%);
+}
+#message    {
+            margin-bottom: 10px;
+}
+#dialog-btn {
+            background-color: ivory;
+            border-radius: 40%;
+
+}
