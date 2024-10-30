@@ -1,19 +1,33 @@
 #dialog-box {
             width:500px;
-            background-color: rgba(30, 143, 255, 0.561);
+            background-color: rgb(0, 3, 5);
             padding: 10px;
-            box-sizing: 500px;
+            /* box-sizing: 500px; */
             text-align: center;
             position: fixed;
             top: 50vh;
             left: 50%;
             transform: translate(-50%, -50%);
+            /* display: none; */
+            border-radius: 90px;
+            box-shadow: 5px 5px 5px royalblue;
+            opacity: 0;       
+}
+
+#dialog-box.visible {
+            /* display: block; */
+            opacity: 0.70;
 }
 #message    {
             margin-bottom: 10px;
+            font-weight: 400;
+            font-size: 24px;
+
+            color: beige;
 }
 #dialog-btn {
             background-color: ivory;
-            border-radius: 40%;
-
+            border-radius: 20px;
+            padding: 8px;
+            width: 70px;
 }
