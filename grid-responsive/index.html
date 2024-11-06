@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Document</title>
+</head>
+<body>
+        <nav id="menu">
+            <button id="burger"><img src="burger.svg"></button>
+            <ul>
+                <li><a href="#">Accueil</a></li>
+                <li><a href="#">Produits</a></li>
+                <li><a href="#">A propos</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Contact</a></li>
+    
+            </ul>
+        </nav>
+        <div class="top">
+            <div class="colonne demi seuil500" id="top-one">
+                <h2>Colonne I</h2>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rem odit harum 
+                    at blanditiis quas corporis temporibus, fugiat velit ut nam sapiente laborum,
+                     nemo ullam dolor, dolorem quae deleniti aperiam omnis!
+
+                     Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rem odit harum 
+                     at blanditiis quas corporis temporibus, fugiat velit ut nam sapiente laborum,
+                      nemo ullam dolor, dolorem quae deleniti aperiam omnis!</p>
+            </div>
+            <div class="colonne demi seuil500" id="top-two">
+                <h2>Colonne II</h2>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rem odit harum 
+                    at blanditiis quas corporis temporibus, fugiat velit ut nam sapiente laborum,
+                     nemo ullam dolor, dolorem quae deleniti aperiam omnis!</p>
+            </div>
+        </div>
+        <div class="bottom">
+            <div class="colonne tiers seuil700" id="one">
+                <h2>Colonne III</h2>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rem odit harum 
+                    at blanditiis quas corporis temporibus, fugiat velit ut nam sapiente laborum,
+                     nemo ullam dolor, dolorem quae deleniti aperiam omnis! Lorem
+                    </p>
+
+            </div>
+            <div class="colonne tiers seuil700" id="two">
+                <h2>Colonne IV</h2>                
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rem odit harum 
+                at blanditiis quas corporis temporibus, fugiat velit ut nam sapiente laborum,
+                nemo ullam dolor, dolorem quae deleniti aperiam omnis!</p>
+            </div>
+            <div class="colonne tiers seuil700" id="three">
+                <h2>Colonne V</h2>  
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rem odit harum 
+                    at blanditiis quas corporis temporibus, fugiat velit ut nam sapiente laborum,
+                     nemo ullam dolor, dolorem quae deleniti aperiam omnis!</p>
+            </div>
+        </div>
+        <script>
+            /*  *** Version ou visible etait attribué à ul seuement ****
+            document.querySelector("#menu button").onclick = function () {
+                this.nextElementSibling.classList.toggle("visible"); 
+                 }
+                /*nextElementSibling : propriété désignant l'éventuelle élément suivant dans le meme parent */
+                /*toggle : permet de switcher automatiquement entre classList.add ou .remove selon que la classe est présente ou absente  de l'element*/
+
+            let menu = document.querySelector("#menu");
+            menu.querySelector("button").onclick = function () {
+                    menu.classList.toggle("visible");
+            }
+
+        </script>
+</body>
+</html>

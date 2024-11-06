@@ -1,0 +1,126 @@
+
+body {
+    font-size: 18px;
+    color: aliceblue;
+}
+.top {
+    display: flex;
+    gap: 20px;
+    background-color: rgb(255, 255, 255);
+ 
+}
+
+.bottom { 
+    display: flex;
+    background-color: rgb(255, 255, 255); 
+}
+
+
+/* ****Menu**** */
+
+#menu {
+    background-color: rgb(236, 111, 111);
+    display: flex;
+    align-items: center; /*Si on ajoute un height à l'element ses items ne sont pls centrées par défaut*/
+    list-style: none;
+    height: 60px;
+    transition-duration: height 1s;
+}
+
+#menu ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    gap: 20px;
+}
+
+#menu ul li {
+    color: rgb(248, 248, 248);
+}
+
+#menu a {
+    color: rgb(248, 248, 248);
+    text-decoration: none;
+}
+
+button {
+    width: 50px;
+    flex-shrink: 0; /*Empecher reduction de la taille des élément dans un contenair flex*/
+    display: none;
+    border: none;
+    background-color: transparent;
+    transition: margin-top 0.3s;
+}
+
+#menu button img {
+    width: 100%;
+}
+
+/*Elements */
+
+
+/* Classe pour colonnes occupant moitié largeur */
+.demi {
+    width:calc(50% - 10px);
+}
+/* Classe pour colonnes occupant tiers largeur */
+.tiers {
+    width: 33,333%;
+}
+
+#top-one {
+    background-color: darksalmon;
+}
+#top-two {
+    background-color: rgb(252, 21, 163);
+}
+#one {
+    background-color: rgb(71, 93, 219);
+}
+#two {
+    background-color: rgb(44, 122, 51);
+}
+#three {
+    background-color: blue;
+}
+
+/* Media Screen */
+
+@media screen and (max-width:900px) { /* Concerne que le menu */
+    #menu {
+        height: auto; /*Annule la hauteur qui était fixe afin de permettre
+         l'ajustement automatique de la hauteur permet donc de continuer 
+         à affiché le contenu en dessous du menu*/
+        align-items: flex-start; /* Pour que tout soit aligné en haut du menu et non plus centré en vertical*/
+    }
+    #menu ul {
+        display: none;
+        flex-direction: column;
+        margin: 20px 0px 50px 5px; /*top right bottom left*/
+        cursor: pointer;
+    }
+    #menu.visible ul{
+        display: flex;
+    }
+    #menu button {
+        display: block; /* Annule display none donc le masquage*/
+    }
+    #menu.visible button{
+        margin-top: 15px;
+    }
+}
+@media screen and (max-width:700px) {
+    .top {
+        flex-wrap: wrap; /* rendre possible retour à la ligne,
+         ou plusieurs rangées dans un conteneur*/
+    }
+    .seuil700 {
+         width: 100%; /* permet au colonnes de la classe d'occuper toute la largeur du conteneur*/
+    }
+}
+@media screen and (max-width:300px) { 
+    .seuil500 {
+        width: 100%;
+    }
+}
